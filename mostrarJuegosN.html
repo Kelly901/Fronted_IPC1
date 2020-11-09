@@ -117,7 +117,7 @@
 
             window.alert(id)
 
-            fetch("http://127.0.0.1:9000/mostrarJuego", {
+            fetch("https://proyectogame.herokuapp.com/mostrarJuego", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -165,7 +165,7 @@
             const urlParams = new URLSearchParams(queryString);
             const id = urlParams.get('idJuego')
            
-            fetch("http://127.0.0.1:9000/mostrarComentario", {
+            fetch("https://proyectogame.herokuapp.com/mostrarComentario", {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -232,7 +232,7 @@
 
       
       function mostrarOpcion(){
-        fetch("http://127.0.0.1:9000/mostrarOpcion",{
+        fetch("https://proyectogame.herokuapp.com/mostrarOpcion",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'

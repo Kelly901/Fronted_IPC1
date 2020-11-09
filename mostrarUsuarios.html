@@ -108,7 +108,7 @@
       var variable =""
       function mostrarClientes(){
 
-        fetch("http://127.0.0.1:9000/mostrarClientes",{
+        fetch("https://proyectogame.herokuapp.com/mostrarClientes",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'
@@ -162,7 +162,7 @@
       var usuario= document.getElementById("usuario").value
       var password= document.getElementById("password").value
       
-        fetch("http://127.0.0.1:9000//modificarUsuario",{
+        fetch("https://proyectogame.herokuapp.com/modificarUsuario",{
           method:'POST',
           headers:{
             'Content-Type': 'application/json'
@@ -194,7 +194,7 @@
         //
        
         function mostrarOpcion(){
-        fetch("http://127.0.0.1:9000/mostrarOpcion",{
+        fetch("https://proyectogame.herokuapp.com/mostrarOpcion",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'

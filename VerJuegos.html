@@ -128,7 +128,7 @@
         const urlParams = new URLSearchParams(queryString);
         const id = urlParams.get('idNombre')  
         
-        fetch("http://127.0.0.1:9000/imagen",{
+        fetch("https://proyectogame.herokuapp.com/imagen",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'
@@ -197,7 +197,7 @@
       var banner= document.getElementById("banner").value
       var descripcion= document.getElementById("descripcion").value
       
-        fetch("http://127.0.0.1:9000/modificarJuego",{
+        fetch("https://proyectogame.herokuapp.com/modificarJuego",{
           method:'POST',
           headers:{
             'Content-Type': 'application/json'
@@ -234,7 +234,7 @@
         //
        
         function mostrarOpcion(){
-        fetch("http://127.0.0.1:9000/mostrarOpcion",{
+        fetch("https://proyectogame.herokuapp.com/mostrarOpcion",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'
@@ -288,7 +288,7 @@
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
         const id = urlParams.get('idNombre') 
-        fetch("http://127.0.0.1:9000/eliminar",{
+        fetch("https://proyectogame.herokuapp.com/eliminar",{
           method:'POST',
           headers:{
             'Content-Type': 'application/json'

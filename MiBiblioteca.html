@@ -80,7 +80,7 @@
     <script>
       function mostrarBibloteca(){
         var idU = sessionStorage.getItem("id")
-        fetch("http://127.0.0.1:9000/mostrarBibloteca",{
+        fetch("https://proyectogame.herokuapp.com/mostrarBibloteca",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'
@@ -122,7 +122,7 @@
 
       //Agregar al seleted
       function mostrarOpcion(){
-        fetch("http://127.0.0.1:9000/mostrarOpcion",{
+        fetch("https://proyectogame.herokuapp.com/mostrarOpcion",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'

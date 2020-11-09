@@ -109,7 +109,7 @@
 
 function mostrarCliente(){
   var id=sessionStorage.getItem("id")
-fetch("http://127.0.0.1:9000/mostrarPerfil",{
+fetch("https://proyectogame.herokuapp.com/mostrarPerfil",{
   
   method:'POST',
         headers:{
@@ -156,7 +156,7 @@ function cargarId(){
       var usuario= document.getElementById("usuario").value
       var password= document.getElementById("password").value
       var confirmar=document.getElementById("confirmar").value
-        fetch("http://127.0.0.1:9000//modficarPerfil",{
+        fetch("https://proyectogame.herokuapp.com/modficarPerfil",{
           method:'POST',
           headers:{
             'Content-Type': 'application/json'
@@ -194,7 +194,7 @@ function cargarId(){
       ///
 
       function mostrarOpcion(){
-        fetch("http://127.0.0.1:9000/mostrarOpcion",{
+        fetch("https://proyectogame.herokuapp.com/mostrarOpcion",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'

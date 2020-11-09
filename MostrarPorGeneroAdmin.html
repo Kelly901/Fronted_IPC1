@@ -87,7 +87,7 @@
         const urlParams = new URLSearchParams(queryString);
         const idGenero = urlParams.get('idGenero')  
         alert(idGenero)
-        fetch("http://127.0.0.1:9000/imagen",{
+        fetch("https://proyectogame.herokuapp.com/imagen",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'
@@ -131,7 +131,7 @@
       //
        
       function mostrarOpcion(){
-        fetch("http://127.0.0.1:9000/mostrarOpcion",{
+        fetch("https://proyectogame.herokuapp.com/mostrarOpcion",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'

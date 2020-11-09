@@ -122,7 +122,7 @@
          var password= document.getElementById("password").value
          var confirmar_password= document.getElementById("confirmar_password").value
          //var estado='1'
-         fetch('http://127.0.0.1:9000/crear_usuario',{
+         fetch('https://proyectogame.herokuapp.com/crear_usuario',{
            method : 'POST',
            headers: {
             'Content-Type': 'application/json'
@@ -153,7 +153,7 @@
 
         //Agrega al selected
       function mostrarOpcion(){
-        fetch("http://127.0.0.1:9000/mostrarOpcion",{
+        fetch("https://proyectogame.herokuapp.com/mostrarOpcion",{
           method:'GET',
           headers:{
             'Content-Type': 'application/json'
