@@ -107,7 +107,7 @@
 
             if (idU == element.idU) {
              console.log(element.foto)
-             colocarImagenes.innerHTML+=`
+             colocarImagenes.innerHTML+=`   <a href="MostrarJuegoAdmin.html?idJuego=${element.id}" >
                                            <li>
                                            <div class="divImagen">
                                               <img src=${element.foto} alt="">
@@ -116,7 +116,7 @@
 
                                             </div>  
                                             </li>
-                                          
+                                            </a>
                                           `
             }
            });
